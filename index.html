@@ -10,11 +10,7 @@
     text-align: center;
     font-family: system-ui, sans-serif;
   }
-  td {
-    height: 3rem;
-    width: 3rem;
-    text-align: center;
-  }
+
   table {
     margin: 5rem auto;
   }
@@ -30,8 +26,6 @@
 <h1>Tic Tac Toe</h1>
 
 <table>
-
-
   <tr>
     <td><input type="checkbox" /></td>
     <td><input type="checkbox" /></td>
@@ -63,7 +57,7 @@
     [
       [1, 1],
       [2, 2],
-      [3, 3],
+      [3, 311],
     ],
     [
       [3, 1],
@@ -96,9 +90,7 @@
       return endGame();
     }
     runRobotTurn();
-    if (hasWin()) {
-      return endGame();
-    }
+   
   }
 
   // Choose a random available box
