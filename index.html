@@ -47,9 +47,6 @@
   console.log("test")
   console.log("test")
   console.log("test")
-  console.log("test")
-  console.log("test")
-  console.log("test")
   // Initialization
   const boxes = Array.from(document.querySelectorAll("td"));
   const inputs = Array.from(document.querySelectorAll("[type=checkbox]"));
@@ -99,17 +96,7 @@
    
   }
 
-  // Choose a random available box
-  function runRobotTurn() {
-    const robotBoxes = shuffle(boxes);
-    while (robotBoxes.length) {
-      const box = robotBoxes.shift();
-      if (box.querySelector("input")) {
-        box.innerHTML = ROBOT;
-        break;
-      }
-    }
-  }
+ 
 
   // Determine win
   function hasWin() {
